@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WalkingFree Deeplink Tester</title>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background: #f9f9f9;
+    }
+    h1 {
+      margin-bottom: 20px;
+    }
+    button {
+      font-size: 18px;
+      padding: 12px 24px;
+      margin: 12px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .success {
+      background-color: #4caf50;
+      color: white;
+    }
+    .canceled {
+      background-color: #f44336;
+      color: white;
+    }
+    button:hover {
+      opacity: 0.85;
+    }
+  </style>
+</head>
+<body>
+  <h1>Test WalkingFree Deeplinks</h1>
+  <button class="success" onclick="window.location.href='walkingfree://pay-pal/success'">
+    Open Success Deeplink
+  </button>
+  <button class="canceled" onclick="window.location.href='walkingfree://pay-pal/canceled'">
+    Open Canceled Deeplink
+  </button>
+</body>
+</html>
